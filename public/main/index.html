@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Discount Store</title>
+    <link href="../assets/images/logo.png" rel="icon">
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/discountstore.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Discount Store</a>
+
+            <div class="dropdown">
+                <div data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="name" id="profile_name">Loading</span>
+                    <img class="profile-picture" id="profile_photo" src="../assets/images/logo.png" alt="Profile">
+                </div>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
+                    <li><a class="dropdown-item" href="#">Perfil</a></li>
+                    <li><a class="dropdown-item" href="#">Configuração</a></li>
+                    <li><a class="dropdown-item" id="sign_out">Sair</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row row-cols-1 row-cols-md-3 g-4" id="card_list"></div>
+    </div>
+
+    <script src="../js/vendor/popper.min.js"></script>
+    <script src="../js/vendor/jquery-3.7.0.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-functions.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-storage.js"></script>
+    <script src="/__/firebase/init.js"></script>
+    <script src="../js/discountstore.js"></script>
+</body>
+
+</html>
